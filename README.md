@@ -1,3 +1,4 @@
+x
 # Github Action to hide Bot comments
 
 ![build-test](https://github.com/kanga333/comment-hider/workflows/build-test/badge.svg)
