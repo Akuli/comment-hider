@@ -1,0 +1,21 @@
+name: Create artifact
+
+on:
+  pull_request:
+
+jobs:
+  my_job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo lollllllllll asdf > message.txt
+      - run: |
+          echo ${{ github.event.pull_request.number }} > pr_number.txt
+      - uses: actions/upload-artifact@v2
+        with:
+          name: message
+          path: message.txt
+      - uses: actions/upload-artifact@v2
+        with:
+          name: message
+          path: pr_number.txt
